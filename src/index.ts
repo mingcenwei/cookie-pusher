@@ -14,12 +14,8 @@ export type {
 } from "./type-helpers";
 export {assertTypeExtends} from "./type-helpers";
 
-<<<<<<< HEAD
-export {default as neverThrow, Err, Ok, Result, ResultAsync} from "neverthrow";
-=======
 export {default as neverThrow, Err, Ok, ResultAsync} from "neverthrow";
 export type {Result} from "neverthrow";
->>>>>>> ee52916... Bug fix, re-export all types from "neverthrow"
 
 import {Client, Cookie} from "./client";
 import {parseRawHeadersIntoObject} from "./utilities";
