@@ -1,5 +1,6 @@
 export type {ClientConfig} from "./client";
 export {Client, Cookie} from "./client";
+export type {Headers} from "./utilities";
 export {parseRawHeadersIntoObject} from "./utilities";
 export {AxiosError} from "./exceptions";
 
