@@ -1,6 +1,6 @@
 {
 	"name": "cookie-pusher",
-	"version": "0.1.4",
+	"version": "0.1.5",
 	"description": "Cookie-aware HTTP client based on axios and tough-cookie",
 	"keywords": [
 		"cookie",
@@ -16,8 +16,8 @@
 	"engines": {
 		"node": "^14.13.1"
 	},
-	"main": ".dist/index.js",
-	"types": ".dist/index.d.ts",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
 	"type": "module",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
