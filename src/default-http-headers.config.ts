@@ -57,4 +57,7 @@ export const languageToAcceptLanguageStringMap = {
 	chinese: `zh-CN,zh;q=0.5`,
 } as const;
 
-export default {httpHeaderOptions, languageToAcceptLanguageStringMap};
+export default {
+	httpHeaderOptions,
+	languageToAcceptLanguageStringMap,
+};

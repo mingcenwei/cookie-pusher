@@ -13,6 +13,11 @@ import type {
 import toughCookie from "tough-cookie";
 import neverThrow from "neverthrow";
 
+export type {
+	AxiosRequestConfig,
+	AxiosResponse,
+} from "axios";
+
 export const Cookie = toughCookie.Cookie;
 
 const getDefaultRequestHeaders = (): Headers => {
