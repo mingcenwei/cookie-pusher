@@ -14,7 +14,7 @@ export type {
 } from "./type-helpers";
 export {assertTypeExtends} from "./type-helpers";
 
-export type {default as neverThrow} from "neverthrow";
+export {default as neverThrow, Err, Ok, Result, ResultAsync} from "neverthrow";
 
 import {Client, Cookie} from "./client";
 import {parseRawHeadersIntoObject} from "./utilities";
