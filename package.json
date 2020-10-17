@@ -1,6 +1,6 @@
 {
 	"name": "cookie-pusher",
-	"version": "0.1.5",
+	"version": "0.1.6",
 	"description": "Cookie-aware HTTP client based on axios and tough-cookie",
 	"keywords": [
 		"cookie",
