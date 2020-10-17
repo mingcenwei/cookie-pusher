@@ -11,7 +11,7 @@ import type {
 	AxiosError as AxiosError_,
 } from "axios";
 import toughCookie from "tough-cookie";
-import neverthrow from "neverthrow";
+import neverThrow from "neverthrow";
 
 export const Cookie = toughCookie.Cookie;
 
@@ -60,7 +60,7 @@ export class Client {
 
 	public readonly access = (
 		config: ClientConfig,
-	): neverthrow.ResultAsync<AxiosResponse, AxiosError> => {
+	): neverThrow.ResultAsync<AxiosResponse, AxiosError> => {
 		const url =
 			config.baseURL !== undefined
 				? new URL(config.url, config.baseURL)
@@ -103,7 +103,7 @@ export class Client {
 		};
 		delete newConfig.baseURL;
 		const response: Promise<AxiosResponse> = axios(newConfig);
-		return neverthrow.ResultAsync.fromPromise(
+		return neverThrow.ResultAsync.fromPromise(
 			response,
 			(error) =>
 				new AxiosError(
@@ -122,7 +122,7 @@ export class Client {
 				const newUrl: string = response.headers[`location`];
 				return this.access({...config, url: newUrl});
 			} else {
-				return neverthrow.ok(response);
+				return neverThrow.ok(response);
 			}
 		});
 	};
