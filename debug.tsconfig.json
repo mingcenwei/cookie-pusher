@@ -1,0 +1,158 @@
+{
+	/* Visit https://aka.ms/tsconfig.json to read more about this file */
+
+	//"extends": "./configs/base",
+	/* npm install --save-dev @tsconfig/recommended */
+	/* yarn add --dev @tsconfig/recommended */
+	"extends": "@tsconfig/recommended/tsconfig.json",
+
+	"include": ["src/**/*", "test/**/*"],
+	"exclude": [
+		"build/",
+		"dist/",
+		"public/",
+		"node_modules/",
+		"bower_components/",
+		"jspm_packages/",
+		"babel.config.js",
+		"metro.config.js",
+		"jest.config.js"
+	],
+	//"files": [],
+	//"references": [],
+	//"typeAcquisition": {
+	//	"enable": true
+	//},
+
+	"compilerOptions": {
+		/* Specify library files to be included in the compilation. */
+		//"lib": ["ESNext"],
+		"lib": ["ESNext", "DOM"],
+
+		/* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */
+		//"target": "ES3",
+		"target": "ES6",
+		//"target": "ESNext",
+
+		/* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */
+		//"module": "CommonJS",
+		"module": "ESNext",
+
+		/* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */
+		"jsx": "react",
+		//"jsx": "preserve",
+
+		/* Base directory to resolve non-absolute module names. */
+		//"baseUrl": "./"
+		/* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
+		"moduleResolution": "node",
+		/* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
+		//"paths": {},
+		/* Do not resolve the real path of symlinks. */
+		"preserveSymlinks": false,
+		"resolveJsonModule": true,
+
+		/* Transpile each file as a separate module (similar to 'ts.transpileModule'). */
+		"isolatedModules": true,
+		/* Redirect output structure to the directory. */
+		"outDir": "build/",
+		/* Concatenate and emit output to single file. */
+		//"outFile": "build/output.js",
+		/* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
+		"rootDir": "./",
+		/* List of root folders whose combined content represents the structure of the project at runtime. */
+		//"rootDirs": [],
+		/* List of folders to include type definitions from. */
+		//"typeRoots": [],
+		/* Type declaration files to be included in compilation. */
+		//"types": [],
+		/* Specify the location where debugger should locate TypeScript files instead of source locations. */
+		//"sourceRoot": "",
+		/* Specify the location where debugger should locate map files instead of generated locations. */
+		//"mapRoot": "",
+
+		/* Allow javascript files to be compiled. */
+		"allowJs": false,
+		/* Report errors in .js files. */
+		//"checkJs": true,
+
+		//"generateCpuProfile": "profile.cpuprofile",
+		/* Specify file to store incremental compilation information */
+		//"tsBuildInfoFile": ".tsbuildinfo",
+
+		//"plugins": [],
+
+		"assumeChangesOnlyAffectDirectDependencies": true,
+		"extendedDiagnostics": false,
+		/* Enable incremental compilation */
+		"incremental": true,
+		"listEmittedFiles": true,
+		"listFiles": false,
+		/* Do not emit outputs. */
+		"noEmit": false,
+		/* Skip type checking of declaration files. */
+		"skipLibCheck": true,
+
+		/* Enable project compilation */
+		"composite": true,
+		/* Generates corresponding '.d.ts' file. */
+		"declaration": true,
+		/* Generates a sourcemap for each corresponding '.d.ts' file. */
+		"declarationMap": true,
+		/* Provide full support for iterables in 'for-of', spread, and destructuring when targeting 'ES5' or 'ES3'. */
+		"downlevelIteration": true,
+		/* Emit a single file with source maps instead of having a separate file. */
+		"inlineSourceMap": false,
+		/* Emit the source alongside the sourcemaps within a single file; requires '--inlineSourceMap' or '--sourceMap' to be set. */
+		"inlineSources": false,
+		/* Import emit helpers from 'tslib'. */
+		"importHelpers": false,
+		"newLine": "lf",
+		"preserveConstEnums": false,
+		/* Do not emit comments to output. */
+		"removeComments": false,
+		/* Generates corresponding '.map' file. */
+		"sourceMap": true,
+
+		/* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */
+		"allowSyntheticDefaultImports": true,
+		/* Allow accessing UMD globals from modules. */
+		"allowUmdGlobalAccess": false,
+		/* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
+		"esModuleInterop": true,
+
+		/* Stylize errors and messages using color and context, this is on by default — offers you a chance to have less terse, single colored messages from the compiler. */
+		"pretty": true,
+
+		/* Enable all strict type-checking options. */
+		"strict": true,
+		/* Parse in strict mode and emit "use strict" for each source file. */
+		"alwaysStrict": true,
+		/* Raise error on expressions and declarations with an implied 'any' type. */
+		"noImplicitAny": true,
+		/* Raise error on 'this' expressions with an implied 'any' type. */
+		"noImplicitThis": true,
+		/* Enable strict 'bind', 'call', and 'apply' methods on functions. */
+		"strictBindCallApply": true,
+		/* Enable strict checking of function types. */
+		"strictFunctionTypes": true,
+		/* Enable strict null checks. */
+		"strictNullChecks": true,
+		/* Enable strict checking of property initialization in classes. */
+		"strictPropertyInitialization": true,
+
+		//"allowUnreachableCode": false,
+		"allowUnusedLabels": false,
+		/* Disallow inconsistently-cased references to the same file. */
+		"forceConsistentCasingInFileNames": true,
+		"importsNotUsedAsValues": "error",
+		/* Report errors for fallthrough cases in switch statement. */
+		"noFallthroughCasesInSwitch": true,
+		/* Report error when not all code paths in function return a value. */
+		"noImplicitReturns": true,
+		/* Report errors on unused locals. */
+		//"noUnusedLocals": true,
+		/* Report errors on unused parameters. */
+		"noUnusedParameters": true
+	}
+}
