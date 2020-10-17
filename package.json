@@ -20,7 +20,7 @@
 	"types": "dist/index.d.ts",
 	"type": "module",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
+		"test": "npm run build && printf '\n' && node --experimental-specifier-resolution='node' 'build/test/index'",
 		"build": "tsc --build debug.tsconfig.json",
 		"prepack": "tsc --build release.tsconfig.json"
 	},
