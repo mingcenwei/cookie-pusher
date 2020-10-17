@@ -12,6 +12,12 @@
 	"author": "sAy",
 	"license": "Unlicense",
 	"repository": {},
+	"files": [
+		"package.json",
+		"UNLICENSE.txt",
+		"README.html",
+		"dist/"
+	],
 	"devDependencies": {
 		"@tsconfig/recommended": "^1.0.1",
 		"@types/node": "^14.10.3",
