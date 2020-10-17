@@ -1,7 +1,21 @@
 {
 	"name": "cookie-pusher",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "Cookie-aware HTTP client based on axios and tough-cookie",
+	"keywords": [
+		"cookie",
+		"cookies",
+		"http",
+		"axios"
+	],
+	"homepage": "https://github.com/mingcenwei/cookie-pusher",
+	"bugs": {
+		"email": "wmingcen@gmail.com",
+		"url": "https://github.com/mingcenwei/cookie-pusher/issues"
+	},
+	"engines": {
+		"node": "^14.13.1"
+	},
 	"main": ".dist/index.js",
 	"type": "module",
 	"scripts": {
@@ -11,7 +25,10 @@
 	},
 	"author": "sAy",
 	"license": "Unlicense",
-	"repository": {},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mingcenwei/cookie-pusher.git"
+	},
 	"files": [
 		"package.json",
 		"UNLICENSE.txt",
