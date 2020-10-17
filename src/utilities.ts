@@ -16,12 +16,4 @@ export const parseRawHeadersIntoObject = (rawHeaders: string): Headers =>
 			{},
 		);
 
-export const changeErrorMessage = <E extends Error>(
-	error: E,
-	message: string,
-): E => {
-	error.message = message;
-	return error;
-};
-
-export default {parseRawHeadersIntoObject, changeErrorMessage};
+export default {parseRawHeadersIntoObject};
