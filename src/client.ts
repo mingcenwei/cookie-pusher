@@ -42,7 +42,7 @@ export class Client {
 	public defaultHeaders: Headers = getDefaultRequestHeaders();
 	public lastUrls: URL[] = [];
 	public setReferer?: (config: ClientConfig, client: Client) => URL;
-	public readonly cookies = new toughCookie.CookieJar();
+	public cookies = new toughCookie.CookieJar();
 
 	public constructor({
 		userAgent,
